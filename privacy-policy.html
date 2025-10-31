@@ -58,24 +58,91 @@
                 </section>
 
                 <section class="legal-section">
-                    <h2>2. Optional Permissions</h2>
-                    <p>We request only two optional permissions to enhance your experience:</p>
+                    <h2>2. Optional Permissions (Complete Disclosure)</h2>
+                    <p>Findet requests only two optional permissions to enhance your experience. Both are completely optional and require your explicit consent:</p>
                     <ul>
-                        <li><strong>SMS (Optional):</strong> For automatic transaction detection from bank messages
+                        <li><strong>SMS/RCS Permission (Optional):</strong> For automatic transaction detection from bank and payment messages
                             <ul>
-                                <li>Messages are processed entirely on your device</li>
-                                <li>No SMS content is ever transmitted externally</li>
+                                <li>Reads both SMS and RCS (Rich Communication Services) messages</li>
+                                <li>All messages are processed 100% locally on your device</li>
+                                <li>No SMS or RCS content is ever transmitted off your device</li>
+                                <li>Only transaction patterns are identified (amount, merchant, date)</li>
+                                <li>Findet never shares or sells your message data to any third party</li>
+                                <li>You can revoke this permission anytime from Android Settings</li>
                                 <li>You can use manual entry instead</li>
                             </ul>
                         </li>
-                        <li><strong>Microphone (Optional):</strong> For voice transaction recording
+                        <li><strong>Microphone Permission (Optional - With Google Service Disclosure):</strong> For voice transaction recording
                             <ul>
-                                <li>Voice processing happens locally on your device</li>
-                                <li>No recordings are sent to external servers</li>
-                                <li>You can use text entry instead</li>
+                                <li><strong>IMPORTANT:</strong> Voice-to-text uses Google's Speech Recognition service (built-in Android service, NOT on-device processing)</li>
+                                <li><strong>Data Flow:</strong> Your voice audio is sent to Google's servers for transcription</li>
+                                <li>Requires internet connection to function</li>
+                                <li>Google processes your voice and returns text transcription</li>
+                                <li>Findet never stores or has access to your raw voice audio</li>
+                                <li>Text transcription is parsed locally on your device</li>
+                                <li>Transaction data stays on your device</li>
+                                <li>Google's processing is subject to <a href="https://policies.google.com/privacy" target="_blank">Google's Privacy Policy</a></li>
+                                <li>You must explicitly consent before using this feature</li>
+                                <li>You can revoke this permission anytime from Android Settings</li>
+                                <li>You can use manual text entry instead</li>
                             </ul>
                         </li>
                     </ul>
+                </section>
+
+                <section class="legal-section">
+                    <h2>2A. Third-Party Services (Complete Transparency)</h2>
+                    <p>Findet is transparent about ALL third-party services. Here's exactly what we use and when:</p>
+                    
+                    <h3>Google Speech Recognition Service (Optional Voice Feature)</h3>
+                    <p>When you choose to use the voice transaction feature, Findet uses Google's Speech Recognition:</p>
+                    <ul>
+                        <li><strong>Service Type:</strong> Android's built-in SpeechRecognizer API (NOT on-device processing)</li>
+                        <li><strong>What Happens:</strong> Your voice audio is sent to Google's servers for transcription</li>
+                        <li><strong>Internet Required:</strong> Yes, this feature requires an active internet connection</li>
+                        <li><strong>Data Sent to Google:</strong> Voice audio only (e.g., "groceries 500 rupees")</li>
+                        <li><strong>Data Received from Google:</strong> Text transcription only</li>
+                        <li><strong>Findet's Access:</strong> Findet never stores, records, or has access to your raw voice audio</li>
+                        <li><strong>What Findet Does:</strong> Receives text from Google, parses it locally on your device, stores transaction data locally</li>
+                        <li><strong>Google's Privacy Policy:</strong> <a href="https://policies.google.com/privacy" target="_blank">https://policies.google.com/privacy</a></li>
+                        <li><strong>User Control:</strong> This feature is completely optional. You must explicitly consent before using it. You can use manual text entry instead.</li>
+                    </ul>
+                    <p><strong>Important Note:</strong> We do not control how Google processes your voice data. By using the voice feature, you acknowledge that your voice audio is processed by Google's servers subject to their privacy policy.</p>
+
+                    <h3>Firebase Firestore (User-Initiated Only)</h3>
+                    <p>Findet uses Firebase Firestore in VERY LIMITED scenarios - only when YOU explicitly choose to send data:</p>
+                    <ul>
+                        <li><strong>Use Case 1 - Feedback:</strong> When you manually submit feedback via Menu → Send Feedback
+                            <ul>
+                                <li>You type your feedback message and submit it</li>
+                                <li>Only the feedback text you provide is sent to Firestore</li>
+                                <li>No financial data is included</li>
+                                <li>Device info may be included to help us improve the app</li>
+                            </ul>
+                        </li>
+                        <li><strong>Use Case 2 - Unparsed SMS Reports:</strong> When you manually report SMS/RCS messages that couldn't be parsed
+                            <ul>
+                                <li>You choose to send a message that Findet couldn't understand</li>
+                                <li>Only the specific SMS/RCS text and sender information is sent</li>
+                                <li>This helps us improve SMS parsing patterns</li>
+                                <li>No other messages are sent</li>
+                                <li>You review and confirm before sending</li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                    <h3>What Firestore is NOT Used For:</h3>
+                    <ul class="highlight-list">
+                        <li>❌ Storing your transaction data</li>
+                        <li>❌ Backing up your financial information</li>
+                        <li>❌ Syncing data across devices</li>
+                        <li>❌ Storing bank, card, or wallet information</li>
+                        <li>❌ Uploading voice recordings or transcriptions</li>
+                        <li>❌ Automatic data collection or analytics</li>
+                        <li>❌ Storing any SMS/RCS messages automatically</li>
+                    </ul>
+
+                    <p><strong>Privacy Guarantee:</strong> All your financial data (transactions, accounts, budgets, SMS/RCS messages) remains 100% local on your device and is NEVER sent to Firestore or any other cloud service. We do not share, sell, or transmit your financial data to any third party.</p>
                 </section>
 
                 <section class="legal-section">
@@ -127,6 +194,110 @@
                 </section>
 
                 <section class="legal-section">
+                    <h2>6A. Frequently Asked Questions (FAQs)</h2>
+                    
+                    <h3>About Voice Transactions</h3>
+                    <details>
+                        <summary><strong>Is voice processing done on my device?</strong></summary>
+                        <p>No. Voice-to-text uses Google's Speech Recognition service, which sends audio to Google's servers. However, the transcribed text is then parsed locally on your device, and transaction data stays local.</p>
+                    </details>
+
+                    <details>
+                        <summary><strong>Can I use Findet without voice features?</strong></summary>
+                        <p>Yes! Voice transactions are completely optional. You can always use manual text entry for transactions.</p>
+                    </details>
+
+                    <details>
+                        <summary><strong>Does Findet record my conversations?</strong></summary>
+                        <p>No. Recording only happens when you explicitly tap the microphone button. There is no background listening or continuous monitoring.</p>
+                    </details>
+
+                    <details>
+                        <summary><strong>What does Google do with my voice data?</strong></summary>
+                        <p>Google processes voice audio to provide transcription. Please refer to Google's Privacy Policy for details on their data handling practices. Findet does not control Google's processing.</p>
+                    </details>
+
+                    <details>
+                        <summary><strong>Can voice transactions work offline?</strong></summary>
+                        <p>No. Voice-to-text requires an internet connection to send audio to Google's servers. However, manual transaction entry works 100% offline.</p>
+                    </details>
+
+                    <h3>About SMS/RCS Message Parsing</h3>
+                    <details>
+                        <summary><strong>Does Findet read all my messages?</strong></summary>
+                        <p>Findet only scans for transaction-related patterns in SMS and RCS messages. All processing happens locally on your device. No message content leaves your device.</p>
+                    </details>
+
+                    <details>
+                        <summary><strong>Are RCS messages also processed?</strong></summary>
+                        <p>Yes. Findet processes both SMS and RCS messages for transaction detection. Both are processed locally with the same privacy guarantees.</p>
+                    </details>
+
+                    <details>
+                        <summary><strong>Can I use Findet without SMS permission?</strong></summary>
+                        <p>Yes! SMS permission is completely optional. You can manually enter all transactions without granting SMS access.</p>
+                    </details>
+
+                    <details>
+                        <summary><strong>What if Findet can't parse an SMS?</strong></summary>
+                        <p>If you choose, you can manually report unparsed SMS to help us improve. This is optional and requires your explicit confirmation. Only that specific SMS is sent to our Firestore database.</p>
+                    </details>
+
+                    <h3>About Data Storage and Firestore</h3>
+                    <details>
+                        <summary><strong>Where is my financial data stored?</strong></summary>
+                        <p>All financial data (transactions, accounts, balances, budgets) is stored locally on your device in encrypted storage. It never leaves your device unless you explicitly export or share it.</p>
+                    </details>
+
+                    <details>
+                        <summary><strong>What data is sent to Firestore?</strong></summary>
+                        <p>Firestore is ONLY used for: (1) User-initiated feedback when you submit feedback via the app, and (2) Unparsed SMS reports when you choose to report an SMS that couldn't be parsed. Your financial data is NEVER sent to Firestore or any cloud service.</p>
+                    </details>
+
+                    <details>
+                        <summary><strong>Is my data synced across devices?</strong></summary>
+                        <p>No. Findet does not sync data across devices. All data stays on the device where you created it. This ensures maximum privacy.</p>
+                    </details>
+
+                    <details>
+                        <summary><strong>Can Findet see my transactions?</strong></summary>
+                        <p>No. The developer cannot see your transactions, SMS messages, or any financial data. Everything stays encrypted on your device.</p>
+                    </details>
+
+                    <h3>About Data Sharing and Third Parties</h3>
+                    <details>
+                        <summary><strong>Does Findet share my data with anyone?</strong></summary>
+                        <p>Findet does NOT share, sell, or transmit your financial data to ANY third party. The only external service used is Google Speech Recognition (optional, for voice feature only), which receives voice audio but NOT your financial data.</p>
+                    </details>
+
+                    <details>
+                        <summary><strong>What about analytics or advertising?</strong></summary>
+                        <p>Findet has NO analytics, NO advertising networks, and NO tracking. We don't collect usage data or show ads.</p>
+                    </details>
+
+                    <details>
+                        <summary><strong>Can I trust Findet with my privacy?</strong></summary>
+                        <p>Yes. Findet is designed with privacy-first principles: All financial data stays on your device, no account creation required, no automatic data collection, no data sharing with third parties, complete transparency about optional features (voice, SMS), and you control all permissions and data.</p>
+                    </details>
+
+                    <h3>About Permissions and Control</h3>
+                    <details>
+                        <summary><strong>Can I revoke permissions after granting them?</strong></summary>
+                        <p>Yes! Both SMS and microphone permissions can be revoked anytime from Android Settings → Apps → Findet → Permissions. Revoking permissions does not send any data to us.</p>
+                    </details>
+
+                    <details>
+                        <summary><strong>What happens to my data if I uninstall the app?</strong></summary>
+                        <p>When you uninstall Findet, all local data is deleted from your device. Since we don't store data on servers, there's nothing to delete from cloud storage.</p>
+                    </details>
+
+                    <details>
+                        <summary><strong>How do I delete all my data?</strong></summary>
+                        <p>Go to Menu → Settings → Clear All Data, or simply uninstall the app. All data is stored locally, so this removes everything.</p>
+                    </details>
+                </section>
+
+                <section class="legal-section">
                     <h2>7. Children's Privacy</h2>
                     <p>Findet's offline nature provides enhanced protection for users of all ages, as we collect no personal information from any user. However, we recommend that children under 13 use this app only under parental supervision, as it involves financial concepts and requires understanding of money management principles.</p>
                 </section>
@@ -153,9 +324,31 @@
                 </section>
 
                 <section class="legal-section conclusion">
-                    <h2>Our Commitment</h2>
-                    <p>Findet represents a new approach to financial management apps - one where your privacy is protected by design, not just by policy. By keeping all your financial data on your device, we eliminate the most common privacy and security risks associated with financial applications.</p>
-                    <p>Your financial privacy is not just important to us - it's fundamental to how we've built Findet. We believe that you should have complete control over your financial information, and our offline approach ensures that this control remains entirely in your hands.</p>
+                    <h2>Our Commitment to Complete Transparency</h2>
+                    <p>Findet represents a new approach to financial management apps - one where your privacy is protected by design, not just by policy. We believe in complete transparency about how data flows in and out of the app.</p>
+                    
+                    <h3>What We Guarantee:</h3>
+                    <ul class="highlight-list">
+                        <li>✓ All your financial data (transactions, accounts, SMS/RCS messages, balances, budgets) stays 100% local on your device</li>
+                        <li>✓ We do NOT share, sell, or transmit your financial data to any third party</li>
+                        <li>✓ We do NOT store your financial data on our servers or Firestore</li>
+                        <li>✓ We process SMS and RCS messages entirely on your device</li>
+                        <li>✓ Your data is protected with bank-level encryption</li>
+                        <li>✓ No account creation, login, or personal information required</li>
+                    </ul>
+
+                    <h3>What We Disclose About Optional Features:</h3>
+                    <ul class="highlight-list">
+                        <li>✓ Voice transactions use Google's Speech Recognition (sends audio to Google's servers, NOT on-device)</li>
+                        <li>✓ Voice feature requires internet connection and is subject to Google's Privacy Policy</li>
+                        <li>✓ Firestore is ONLY used for user-initiated feedback and optional SMS report submissions</li>
+                        <li>✓ Both voice and SMS features are completely optional - you control when to use them</li>
+                    </ul>
+
+                    <h3>Nothing Hidden:</h3>
+                    <p>This privacy policy reflects our commitment to hiding nothing from you. Every data flow, every third-party service, and every optional feature is clearly disclosed. Your financial privacy is not just important to us - it's fundamental to how we've built Findet.</p>
+                    
+                    <p>Thank you for choosing Findet for your financial tracking needs. Your trust in our privacy-first, transparency-first approach drives our commitment to keeping your financial data exactly where it belongs - with you, on your device.</p>
                 </section>
 
                 <div class="legal-footer">
