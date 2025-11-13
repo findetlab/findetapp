@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terms of Service - Findet</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav class="container">
+            <div class="nav-brand">
+                <img src="images/app-icon.png" alt="Findet" class="logo">
+                <span class="brand-name">Findet</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="support.html">Support</a></li>
+                <li><a href="privacy-policy.html">Privacy</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="legal-page">
+        <div class="container">
+            <div class="legal-content">
+                <h1>Terms of Service for Findet</h1>
+                
+                <div class="legal-meta">
+                    <p><strong>Effective Date:</strong> <span id="current-date"></span></p>
+                    <p><strong>Last Updated:</strong> <span id="updated-date"></span></p>
+                </div>
+
+                <section class="legal-section">
+                    <h2>1. Acceptance of Terms</h2>
+                    <p>By downloading, installing, or using the Findet mobile application ("App"), you agree to be bound by these Terms of Service ("Terms"). If you do not agree to these Terms, please do not use the App.</p>
+                </section>
+
+                <section class="legal-section">
+                    <h2>2. Description of Service</h2>
+                    <p>Findet is a privacy-focused personal finance management application that helps users track expenses, manage budgets, and analyze spending patterns. The App provides the following key features:</p>
+                    
+                    <h3>2.1 Core Features</h3>
+                    <ul>
+                        <li><strong>Auto Expense Tracking:</strong> Automatically detects transactions from bank SMS/RCS messages</li>
+                        <li><strong>Voice Transaction Input:</strong> Hands-free transaction entry using voice commands</li>
+                        <li><strong>Receipt Image Linking:</strong> Attach receipt photos to transactions for complete records</li>
+                        <li><strong>Local Data Backup:</strong> Export and backup data to your preferred location</li>
+                        <li><strong>Smart Budgeting:</strong> Set and track category-wise spending budgets</li>
+                        <li><strong>Historic Analysis:</strong> View detailed spending patterns and trends over time</li>
+                        <li><strong>Multi-Account Management:</strong> Track banks, credit cards, and wallets in one place</li>
+                        <li><strong>Home Screen Widgets:</strong> Quick access to financial summary</li>
+                    </ul>
+
+                    <h3>2.2 Offline-First Architecture</h3>
+                    <p>The App operates primarily offline and stores all financial data locally on your device. All transaction data, account information, and SMS message processing happens entirely on your device and never leaves it.</p>
+                </section>
+
+                <section class="legal-section">
+                    <h2>3. Privacy and Data Storage</h2>
+                    <h3>3.1 Offline Operation</h3>
+                    <ul>
+                        <li>No account or registration is required to use the app</li>
+                        <li>All data is stored locally on your device</li>
+                        <li>No data is transmitted to external servers</li>
+                        <li>You maintain full control over your data</li>
+                    </ul>
+
+                    <h3>3.2 Data Security</h3>
+                    <ul>
+                        <li>You are responsible for maintaining your device's security</li>
+                        <li>We recommend using your device's built-in security features (lock screen, biometrics)</li>
+                        <li>The app encrypts all data stored on your device</li>
+                        <li>Uninstalling the app will permanently delete all associated data</li>
+                    </ul>
+                </section>
+
+                <section class="legal-section">
+                    <h2>4. Permitted Use</h2>
+                    <p>You may use the App for personal, non-commercial purposes to:</p>
+                    <ul>
+                        <li>Track your personal financial transactions</li>
+                        <li>Manage your personal budgets and expenses</li>
+                        <li>Analyze your spending patterns</li>
+                    </ul>
+                </section>
+
+                <section class="legal-section">
+                    <h2>5. Prohibited Use</h2>
+                    <p>You agree not to:</p>
+                    <ul>
+                        <li>Use the App for any unlawful purpose or in violation of these Terms</li>
+                        <li>Attempt to reverse engineer, decompile, or disassemble the App</li>
+                        <li>Use the App to store or track someone else's financial data without permission</li>
+                        <li>Use automated tools to access the App</li>
+                        <li>Use the App for commercial purposes without authorization</li>
+                    </ul>
+                </section>
+
+                <section class="legal-section">
+                    <h2>6. App Permissions</h2>
+                    <p>To utilize Findet's full potential and access its most powerful features, the App requests certain permissions. These permissions are <strong>essential for analyzing your past and future spending patterns effectively</strong>, though technically optional.</p>
+
+                    <h3>6.1 SMS/RCS Permission (Essential for Auto-Tracking)</h3>
+                    <p><strong>Why It's Essential:</strong> This is the core feature that makes Findet powerful. It enables automatic expense tracking from your bank transaction messages.</p>
+                    <ul>
+                        <li>Used to automatically detect and categorize transactions from bank, payment, and merchant SMS/RCS messages</li>
+                        <li>Reads both traditional SMS and RCS (Rich Communication Services) messages</li>
+                        <li>All messages are scanned and processed 100% locally on your device</li>
+                        <li>No SMS or RCS content ever leaves your device</li>
+                        <li>Only transaction-related patterns (amount, merchant, date) are extracted</li>
+                        <li>Essential for analyzing your spending history and future patterns</li>
+                        <li>You can revoke this permission anytime from device settings</li>
+                        <li>Without this permission, you must manually enter all transactions</li>
+                    </ul>
+
+                    <h3>6.2 Microphone Permission (Essential for Voice Input)</h3>
+                    <p><strong>Why It's Essential:</strong> Enables hands-free transaction entry for convenience and accessibility.</p>
+                    <ul>
+                        <li>Used for voice transaction input feature</li>
+                        <li><strong>Important:</strong> Voice-to-text processing uses Google's Speech Recognition service (NOT on-device)</li>
+                        <li>Voice audio is sent to Google's servers for transcription</li>
+                        <li>Requires internet connection to function</li>
+                        <li>Findet never stores or has access to raw voice audio</li>
+                        <li>Only text transcription is received and parsed locally</li>
+                        <li>Transaction data stays on your device</li>
+                        <li>Subject to Google's Privacy Policy: https://policies.google.com/privacy</li>
+                        <li>You must explicitly consent before using this feature</li>
+                        <li>You can revoke this permission anytime from device settings</li>
+                        <li>You can use manual text entry instead at any time</li>
+                    </ul>
+
+                    <h3>6.3 Camera Permission (Essential for Receipt Records)</h3>
+                    <p><strong>Why It's Essential:</strong> Enables complete expense documentation with visual proof.</p>
+                    <ul>
+                        <li>Used to capture receipt images for transactions</li>
+                        <li>All images are stored locally on your device</li>
+                        <li>No images are transmitted to external servers</li>
+                        <li>Essential for maintaining complete transaction records</li>
+                        <li>Perfect for business expenses and tax documentation</li>
+                        <li>You can revoke this permission anytime from device settings</li>
+                    </ul>
+
+                    <h3>6.4 Other System Permissions</h3>
+                    <ul>
+                        <li><strong>Internet & Network State:</strong> Required ONLY for voice transaction feature (Google Speech Recognition) and app updates. Core functionality works 100% offline.</li>
+                        <li><strong>Wake Lock & Battery Optimization:</strong> Ensures SMS monitoring and widget updates work reliably in the background</li>
+                        <li><strong>Boot Completed:</strong> Restarts SMS monitoring after device reboot for continuous tracking</li>
+                    </ul>
+
+                    <h3>6.5 Permission Summary</h3>
+                    <p><strong>All permissions are technically optional</strong> - you can use the app without granting them. However, these permissions are <strong>essential to serve you better and utilize Findet to its fullest potential</strong> for comprehensive financial analysis. Without these permissions, core features like automatic expense tracking and voice input will not be available.</p>
+                </section>
+
+                <section class="legal-section">
+                    <h2>7. Data and Privacy</h2>
+                    <p>Your privacy is important to us. Our collection, use, and disclosure of your personal information is governed by our Privacy Policy, which is incorporated into these Terms by reference. By using the App, you consent to the collection and use of your information as described in our Privacy Policy.</p>
+                </section>
+
+                <section class="legal-section">
+                    <h2>8. User Content and Data</h2>
+                    <h3>8.1 Your Data</h3>
+                    <ul>
+                        <li>You retain ownership of all financial data you input into the App</li>
+                        <li>You are responsible for the accuracy of your financial data</li>
+                        <li>You can delete your data at any time</li>
+                    </ul>
+
+                    <h3>8.2 Data Backup</h3>
+                    <ul>
+                        <li>We are not liable for any loss of data</li>
+                    </ul>
+                </section>
+
+                <section class="legal-section">
+                    <h2>9. Intellectual Property</h2>
+                    <h3>9.1 Our Rights</h3>
+                    <ul>
+                        <li>The App and all related content are owned by us or our licensors</li>
+                        <li>All trademarks, logos, and brand names are our property</li>
+                        <li>You may not copy, modify, or distribute the App without permission</li>
+                    </ul>
+
+                    <h3>9.2 Limited License</h3>
+                    <p>We grant you a limited, non-exclusive, non-transferable license to use the App for personal purposes in accordance with these Terms.</p>
+                </section>
+
+                <section class="legal-section">
+                    <h2>10. Disclaimers</h2>
+                    <h3>10.1 Financial Advice</h3>
+                    <ul>
+                        <li>The App is a tool for tracking expenses and does not provide financial advice</li>
+                        <li>We are not financial advisors and do not make investment recommendations</li>
+                        <li>You should consult qualified professionals for financial advice</li>
+                    </ul>
+
+                    <h3>10.2 Accuracy</h3>
+                    <ul>
+                        <li>While we strive for accuracy in our local processing algorithms, we cannot guarantee they will be error-free</li>
+                        <li>Automatic SMS transaction detection may not be 100% accurate</li>
+                        <li>Voice transaction input may not always be accurately interpreted</li>
+                        <li>You should review all automatically detected or voice-input transactions</li>
+                    </ul>
+
+                    <h3>10.3 Local Operation</h3>
+                    <ul>
+                        <li>The app operates entirely offline on your device</li>
+                        <li>App functionality depends on your device's performance and storage</li>
+                        <li>Regular device maintenance and sufficient storage space are recommended</li>
+                        <li>We are not liable for any device-related issues affecting app performance</li>
+                    </ul>
+                </section>
+
+                <section class="legal-section">
+                    <h2>11. Limitation of Liability</h2>
+                    <p>TO THE MAXIMUM EXTENT PERMITTED BY LAW:</p>
+                    <ul>
+                        <li>WE SHALL NOT BE LIABLE FOR ANY INDIRECT, INCIDENTAL, SPECIAL, OR CONSEQUENTIAL DAMAGES</li>
+                        <li>OUR TOTAL LIABILITY SHALL NOT EXCEED THE AMOUNT YOU PAID FOR THE APP (IF ANY)</li>
+                        <li>WE ARE NOT LIABLE FOR ANY FINANCIAL DECISIONS MADE BASED ON APP DATA</li>
+                        <li>WE ARE NOT LIABLE FOR ANY DATA LOSS OR SECURITY BREACHES</li>
+                    </ul>
+                </section>
+
+                <section class="legal-section">
+                    <h2>12. Indemnification</h2>
+                    <p>You agree to indemnify and hold us harmless from any claims, damages, or expenses arising from:</p>
+                    <ul>
+                        <li>Your use of the App</li>
+                        <li>Your violation of these Terms</li>
+                        <li>Your violation of any third-party rights</li>
+                        <li>Any content you submit through the App</li>
+                    </ul>
+                </section>
+
+                <section class="legal-section">
+                    <h2>13. Updates and Modifications</h2>
+                    <h3>13.1 App Updates</h3>
+                    <ul>
+                        <li>We may update the App from time to time</li>
+                        <li>Updates may add, remove, or modify features</li>
+                        <li>You should keep the App updated to the latest version</li>
+                    </ul>
+
+                    <h3>13.2 Terms Updates</h3>
+                    <ul>
+                        <li>We may modify these Terms at any time</li>
+                        <li>We will notify you of material changes</li>
+                        <li>Continued use of the App constitutes acceptance of updated Terms</li>
+                    </ul>
+                </section>
+
+                <section class="legal-section">
+                    <h2>14. App Usage and Data Control</h2>
+                    <h3>14.1 Your Control</h3>
+                    <ul>
+                        <li>You may stop using the App at any time</li>
+                        <li>Uninstalling the app will permanently remove all local data</li>
+                        <li>No account deletion process needed as no accounts are created</li>
+                    </ul>
+
+                    <h3>14.2 App Updates</h3>
+                    <ul>
+                        <li>We may release app updates through the Play Store</li>
+                        <li>Updates may include new features or security improvements</li>
+                        <li>Your local data will be preserved during updates</li>
+                        <li>You can choose when to install updates</li>
+                    </ul>
+                </section>
+
+                <section class="legal-section">
+                    <h2>15. App Dependencies</h2>
+                    <p>The App operates independently without third-party services. The only external dependency is the Google Play Store for app installation and updates. The app does not integrate with any cloud services, analytics platforms, or other third-party services that could access your data.</p>
+                </section>
+
+                <section class="legal-section">
+                    <h2>16. Governing Law</h2>
+                    <p>These Terms are governed by the laws of India. Any disputes arising from these Terms or the App will be subject to the jurisdiction of courts in India.</p>
+                </section>
+
+                <section class="legal-section">
+                    <h2>17. Severability</h2>
+                    <p>If any provision of these Terms is found to be unenforceable, the remaining provisions will continue to be valid and enforceable.</p>
+                </section>
+
+                <section class="legal-section">
+                    <h2>18. Contact Information</h2>
+                    <p>If you have questions about these Terms, please contact us:</p>
+                    
+                    <div class="contact-info">
+                        <p><strong>Email:</strong> <a href="mailto:findetlab.app@gmail.com">findetlab.app@gmail.com</a></p>
+                        <p><strong>Support:</strong> <a href="support.html">Visit our Support Page</a></p>
+                    </div>
+                </section>
+
+                <div class="legal-footer">
+                    <p><strong>These Terms of Service were last updated on <span id="footer-date"></span> and are effective as of <span id="footer-effective-date"></span>.</strong></p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-brand">
+                        <img src="images/app-icon.png" alt="Findet" class="footer-logo">
+                        <span class="brand-name">Findet</span>
+                    </div>
+                    <p>Smart expense tracking made simple.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                        <li><a href="terms.html">Terms of Service</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="support.html">Help Center</a></li>
+                        <li><a href="mailto:findetlab.app@gmail.com">Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Findet. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Set current date
+        const currentDate = new Date().toLocaleDateString('en-US', {
+            year: 'numeric',
+            month: 'long',
+            day: 'numeric'
+        });
+        
+        document.getElementById('current-date').textContent = currentDate;
+        document.getElementById('updated-date').textContent = currentDate;
+        document.getElementById('footer-date').textContent = currentDate;
+        document.getElementById('footer-effective-date').textContent = currentDate;
+    </script>
+</body>
+</html>

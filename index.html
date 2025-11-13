@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Findet - Smart Expense Tracker</title>
+    <meta name="description" content="Findet is a privacy-focused, 100% offline expense tracking app that securely manages your finances on your device, with optional SMS transaction detection and voice input features.">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav class="container">
+            <div class="nav-brand">
+                <img src="images/app-icon.png" alt="Findet" class="logo">
+                <span class="brand-name">Findet</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#features">Features</a></li>
+                <li><a href="#download">Download</a></li>
+                <li><a href="support.html">Support</a></li>
+                <li><a href="privacy-policy.html">Privacy</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <h1>Smart Expense Tracking Made Simple</h1>
+                    <p class="hero-subtitle">Findet automatically detects transactions from your SMS messages and helps you track expenses effortlessly. Take control of your finances with intelligent categorization and detailed analytics.</p>
+                    <div class="hero-buttons">
+                        <a href="#download" class="btn btn-primary">Download App</a>
+                        <a href="#features" class="btn btn-secondary">Learn More</a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <img src="images/app-dashboard.png" alt="Findet App Screenshot" class="app-screenshot">
+                </div>
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <section id="features" class="features">
+            <div class="container">
+                <h2>Powerful Features to Master Your Finances</h2>
+                <p style="text-align: center; max-width: 800px; margin: 0 auto 40px;">Findet combines automation with privacy to deliver the ultimate expense tracking experience</p>
+                
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon">📱</div>
+                        <h3>Auto SMS/RCS Expense Tracking</h3>
+                        <p><strong>Essential Feature:</strong> Automatically reads and categorizes transactions from bank SMS and RCS messages. Analyze your past spending instantly - no manual entry for 95% of transactions. All processing happens locally on your device.</p>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <div class="feature-icon">🎤</div>
+                        <h3>Voice Transaction Input</h3>
+                        <p><strong>Essential Feature:</strong> Add transactions hands-free by just speaking - "Groceries 500 rupees". Perfect while driving or multitasking. Utilizes Google Speech Recognition for accuracy.</p>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <div class="feature-icon">📸</div>
+                        <h3>Receipt Image Linking</h3>
+                        <p><strong>Essential Feature:</strong> Attach receipt photos to transactions for complete records. Perfect for business expenses, warranty claims, and tax documentation. Images stored securely on your device.</p>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <div class="feature-icon">💾</div>
+                        <h3>Local Data Backup</h3>
+                        <p>Export and backup your financial data to your preferred location. Complete control over your data - backup to cloud storage or local files as you choose.</p>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <div class="feature-icon">🎯</div>
+                        <h3>Smart Budgeting</h3>
+                        <p>Set category-wise budgets and get alerts when you're close to limits. Plan your spending and stay on track with intelligent budget management.</p>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <div class="feature-icon">📊</div>
+                        <h3>Historic Spends Analysis</h3>
+                        <p>View detailed spending patterns over months and years. Visualize where your money goes with charts, trends, and category breakdowns.</p>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <div class="feature-icon">💳</div>
+                        <h3>Multi-Account Support</h3>
+                        <p>Track multiple bank accounts, credit cards, and digital wallets all in one place. Unified view of your entire financial ecosystem.</p>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <div class="feature-icon">📲</div>
+                        <h3>Home Screen Widgets</h3>
+                        <p>Quick access to your financial summary right from your home screen. Customizable widgets for banks, cards, and spending overview.</p>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <div class="feature-icon">🔒</div>
+                        <h3>Privacy-First Design</h3>
+                        <p><strong>100% Offline Core:</strong> All your financial data stays encrypted on your device. We never see your transactions, SMS messages, or account details. Complete transparency guaranteed.</p>
+                    </div>
+                </div>
+
+                <!-- Essential Permissions Section -->
+                <div style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); border-radius: 16px; padding: 40px; margin-top: 60px; color: white; text-align: center;">
+                    <h2 style="color: white; margin-bottom: 20px;">Essential Permissions for Full Feature Access</h2>
+                    <p style="font-size: 18px; margin-bottom: 30px; line-height: 1.6;">To serve you better and utilize Findet to its fullest potential, we recommend granting these <strong>optional</strong> permissions:</p>
+                    
+                    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; text-align: left;">
+                        <div style="background: rgba(255,255,255,0.15); padding: 24px; border-radius: 12px; backdrop-filter: blur(10px);">
+                            <h3 style="color: white; margin-bottom: 12px;">📱 SMS/RCS Reading</h3>
+                            <p style="color: rgba(255,255,255,0.95); font-size: 14px; line-height: 1.5;">Automatically track expenses from bank messages. Essential for analyzing past and future spending patterns. 100% local processing.</p>
+                        </div>
+                        
+                        <div style="background: rgba(255,255,255,0.15); padding: 24px; border-radius: 12px; backdrop-filter: blur(10px);">
+                            <h3 style="color: white; margin-bottom: 12px;">🎤 Microphone Access</h3>
+                            <p style="color: rgba(255,255,255,0.95); font-size: 14px; line-height: 1.5;">Add transactions by voice for hands-free convenience. Uses Google Speech Recognition. Your transaction data stays on your device.</p>
+                        </div>
+                        
+                        <div style="background: rgba(255,255,255,0.15); padding: 24px; border-radius: 12px; backdrop-filter: blur(10px);">
+                            <h3 style="color: white; margin-bottom: 12px;">📷 Camera Access</h3>
+                            <p style="color: rgba(255,255,255,0.95); font-size: 14px; line-height: 1.5;">Attach receipt images to transactions for complete records. Perfect for business expenses and tax documentation.</p>
+                        </div>
+                    </div>
+                    
+                    <p style="margin-top: 30px; font-size: 16px; font-weight: 500;">✓ All permissions are optional — You can use the app without them<br>✓ All financial data stays on your device — We never share or sell your data<br>✓ Complete transparency — Every data flow is disclosed</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Download Section -->
+        <section id="download" class="download">
+            <div class="container">
+                <div class="download-content">
+                    <h2>Download Findet Today</h2>
+                    <p>Start tracking your expenses intelligently. Available on Google Play Store.</p>
+                    <div class="download-buttons">
+                        <a href="[YOUR_PLAY_STORE_LINK]" class="download-btn">
+                            <img src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png" alt="Get it on Google Play" class="store-badge">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Privacy & Transparency Section -->
+        <section class="about">
+            <div class="container">
+                <div class="about-content">
+                    <h2>Privacy-First with Complete Transparency</h2>
+                    <p><strong>Your Financial Data Stays on Your Device:</strong> Unlike other expense trackers, Findet stores ALL your financial data locally on your device with bank-level encryption. We never see your transaction data, account details, or SMS messages.</p>
+                    
+                    <h3>100% Offline Core Features</h3>
+                    <p>Findet's core features work completely offline with no internet connection required. Your financial data never leaves your device. We do NOT share, sell, or transmit your data to any third party.</p>
+                    
+                    <h3>Optional Online Features (With Full Disclosure)</h3>
+                    <p>We offer optional features that enhance convenience but require internet:</p>
+                    <ul style="text-align: left; max-width: 700px; margin: 0 auto;">
+                        <li><strong>Voice Transactions (Optional):</strong> Uses Google's Speech Recognition service. Your voice audio is sent to Google's servers (NOT on-device processing). You must explicitly consent. <a href="privacy-policy.html#voice-feature">Learn more →</a></li>
+                        <li><strong>SMS/RCS Auto-Detection (Optional):</strong> Reads SMS and RCS messages. All processing happens 100% locally on your device. No messages leave your device. <a href="privacy-policy.html#sms-feature">Learn more →</a></li>
+                    </ul>
+
+                    <h3>Complete Transparency Guarantee</h3>
+                    <p><strong>Nothing Hidden:</strong> We disclose every data flow, every third-party service, and every optional feature. Your privacy is protected by design, and your trust is earned through transparency.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section class="about">
+            <div class="container">
+                <div class="about-content">
+                    <h2>About Findet</h2>
+                    <p>Findet was created to solve the common problem of expense tracking while maintaining your complete privacy. Instead of manually entering every transaction, Findet intelligently reads your SMS and RCS messages from banks and payment providers to automatically categorize and track your expenses - all processed locally on your device.</p>
+                    <p><strong>Built Different:</strong> Findet prioritizes your privacy above all else. We believe financial apps should be transparent about data handling and give you complete control.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-brand">
+                        <img src="images/app-icon.png" alt="Findet" class="footer-logo">
+                        <span class="brand-name">Findet</span>
+                    </div>
+                    <p>Smart expense tracking made simple.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>App</h4>
+                    <ul>
+                        <li><a href="#features">Features</a></li>
+                        <li><a href="#download">Download</a></li>
+                        <li><a href="support.html">Support</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                        <li><a href="terms.html">Terms of Service</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <ul>
+                        <li><a href="mailto:findetlab.app@gmail.com">findetlab.app@gmail.com</a></li>
+                        <li><a href="support.html">Help Center</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Findet. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Mobile navigation toggle
+        const navToggle = document.querySelector('.nav-toggle');
+        const navLinks = document.querySelector('.nav-links');
+        
+        if (navToggle) {
+            navToggle.addEventListener('click', () => {
+                navLinks.classList.toggle('active');
+            });
+        }
+    </script>
+</body>
+</html>
