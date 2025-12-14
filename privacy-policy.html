@@ -132,6 +132,26 @@
                         <li><strong>Best For:</strong> Users who need to maintain receipt records for business or personal use</li>
                     </ul>
 
+                    <h4>🔔 Notifications Permission (Optional — Reminders)</h4>
+                    <p><strong>Why It's Useful:</strong> If you enable notifications, FinDet can send on-device reminders for budget alerts, and recurring transactions so you never miss important payments.</p>
+                    <ul>
+                        <li><strong>What We Use:</strong> System notification permission to display local reminders and alerts</li>
+                        <li><strong>Data Handling:</strong> Reminder schedules and settings are stored locally on your device</li>
+                        <li><strong>Privacy:</strong> Notification content and schedules never leave your device and are not shared with third parties</li>
+                        <li><strong>Your Control:</strong> Completely optional. You can decline or revoke notification permission anytime from system settings</li>
+                        <li><strong>Best For:</strong> Users who want timely reminders for bills, budgets, and recurring expenses</li>
+                    </ul>
+
+                    <h4>🔒 Biometric Authentication (Optional — App Access)</h4>
+                    <p><strong>Why It's Useful:</strong> Biometric authentication (fingerprint) provides a quick and secure way to unlock the app and protect access to your financial data without entering a PIN.</p>
+                    <ul>
+                        <li><strong>How It Works:</strong> Uses your device's native biometric</li>
+                        <li><strong>Privacy:</strong> Biometric templates are managed by the OS and are NEVER accessible to FinDet. FinDet only receives a confirmation that authentication succeeded or failed</li>
+                        <li><strong>Data Handling:</strong> No biometric data is stored by the app or transmitted to any server</li>
+                        <li><strong>Your Control:</strong> Completely optional. You can enable, disable, or revoke biometric access anytime from your device settings</li>
+                        <li><strong>Best For:</strong> Users who want convenient, secure access to the app without typing credentials</li>
+                    </ul>
+
                     <h3>2C. Other Permissions (System Requirements)</h3>
                     <ul>
                         <li><strong>Internet & Network State:</strong> Required ONLY for voice transaction feature (to communicate with Google's Speech Recognition) and app updates. Core functionality works 100% offline.</li>
@@ -308,6 +328,16 @@
                     </details>
 
                     <details>
+                        <summary><strong>Can FinDet send me reminders?</strong></summary>
+                        <p>Yes. If you grant notification permission, FinDet can show on-device reminders for bills, budgets, and recurring transactions. Reminder settings and schedules are stored locally and can be disabled anytime in system settings or in-app.</p>
+                    </details>
+
+                    <details>
+                        <summary><strong>Does FinDet store biometric data?</strong></summary>
+                        <p>No. Biometric authentication uses the device's built-in biometric system. FinDet never accesses or stores biometric templates — the OS provides only a success/failure confirmation.</p>
+                    </details> 
+
+                    <details>
                         <summary><strong>What happens to my data if I uninstall the app?</strong></summary>
                         <p>When you uninstall FinDet, all local data is deleted from your device. Since we don't store data on servers, there's nothing to delete from cloud storage.</p>
                     </details>
@@ -365,6 +395,8 @@
                         <li>✓ Voice transactions use android built-in Google's Speech Recognition</li>
                         <li>✓ Voice feature requires internet connection and is subject to Google's Privacy Policy</li>
                         <li>✓ SMS/RCS features are completely optional - you control when to use them</li>
+                        <li>✓ Notifications for reminders are optional and stored locally</li>
+                        <li>✓ Optional biometric app access provides secure on-device authentication</li>
                     </ul>
 
                     <h3>Nothing Hidden:</h3>
@@ -374,7 +406,7 @@
                 </section>
 
                 <div class="legal-footer">
-                    <p><strong>Last updated: October 2025</strong></p>
+                    <p><strong>Last updated: December 2025</strong></p>
                 </div>
             </div>
         </div>
