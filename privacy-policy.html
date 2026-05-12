@@ -64,7 +64,6 @@
                     <h3>Core Features</h3>
                     <ul>
                         <li><strong>Auto Expense Tracking:</strong> Automatically detects transactions from your bank SMS/RCS messages</li>
-                        <li><strong>Voice Transaction Input:</strong> Speak your transactions naturally - "Groceries 500 rupees"</li>
                         <li><strong>Receipt Image Linking:</strong> Attach receipt photos to transactions for complete records</li>
                         <li><strong>Local Data Backup:</strong> Export and backup your data to your preferred location</li>
                         <li><strong>Smart Budgeting:</strong> Set category budgets and track spending limits</li>
@@ -74,12 +73,12 @@
                     </ul>
 
                     <h3>2A. Essential Permissions - Why We Need Them</h3>
-                    <p><strong>These permissions unlock FinDet's most powerful features and are ESSENTIAL to analyze your past and future spending patterns effectively.</strong> While technically optional, granting these permissions enables you to:</p>
+                    <p><strong>These optional permissions enhance automation, record keeping, reminders, and security.</strong> While technically optional, granting the relevant permissions enables you to:</p>
                     <ul>
                         <li>✓ Automatically track 95% of your expenses without manual entry</li>
                         <li>✓ Get accurate insights from your transaction history in SMS/RCS messages</li>
-                        <li>✓ Add transactions hands-free while driving or multitasking</li>
                         <li>✓ Maintain complete transaction records with visual proof</li>
+                        <li>✓ Receive reminders for bills, budgets, and recurring tasks</li>
                         <li>✓ Utilize FinDet's full potential for comprehensive financial management</li>
                     </ul>
 
@@ -104,21 +103,6 @@
                         <li><strong>What We Extract:</strong> Only transaction patterns (amount, merchant, date, account) from financial messages</li>
                         <li><strong>Your Control:</strong> Completely optional. You can revoke this permission anytime from Android Settings and use manual entry instead</li>
                         <li><strong>Best For:</strong> Users who receive bank transaction SMS/RCS and want automatic expense tracking</li>
-                    </ul>
-
-                    <h4>🎤 Microphone Permission (Essential for Voice Input)</h4>
-                    <p><strong>Why It's Essential:</strong> Add transactions in seconds while driving, cooking, or when your hands are busy. Just speak naturally and FinDet handles the rest.</p>
-                    <ul>
-                        <li><strong>IMPORTANT:</strong> Voice-to-text uses android built-in Google's Speech Recognition service</li>
-                        <li><strong>Data Flow:</strong> Your voice audio is sent to Google's servers for transcription</li>
-                        <li><strong>Requires:</strong> Internet connection to function</li>
-                        <li><strong>Google Processes:</strong> Voice audio and returns text transcription</li>
-                        <li><strong>FinDet's Access:</strong> We never store, record, or have access to your raw voice audio</li>
-                        <li><strong>What Happens:</strong> Receives text from Google, parses it locally on your device, stores transaction data locally</li>
-                        <li><strong>Transaction Data:</strong> Stays on your device - never sent to Google or anywhere else</li>
-                        <li><strong>Google's Privacy:</strong> Subject to <a href="https://policies.google.com/privacy" target="_blank">Google's Privacy Policy</a></li>
-                        <li><strong>Your Control:</strong> Completely optional. You must explicitly consent before using. You can revoke this permission anytime from Android Settings and use manual text entry instead</li>
-                        <li><strong>Best For:</strong> Users who want hands-free transaction entry</li>
                     </ul>
 
                     <h4>📷 Camera Permission (Essential for Receipt Records)</h4>
@@ -154,13 +138,13 @@
 
                     <h3>2C. Other Permissions (System Requirements)</h3>
                     <ul>
-                        <li><strong>Internet & Network State:</strong> Required ONLY for voice transaction feature (to communicate with Google's Speech Recognition) and app updates. Core functionality works 100% offline.</li>
+                        <li><strong>Internet & Network State:</strong> Used for limited app update checks and user-initiated external links only. Core financial tracking functionality works 100% offline.</li>
                         <li><strong>Wake Lock & Battery Optimization:</strong> Ensures SMS monitoring and widget updates work reliably in the background</li>
                         <li><strong>Boot Completed:</strong> Restarts SMS monitoring after device reboot (optional, for convenience)</li>
                     </ul>
 
-                    <h3>Internet Permission — App Updates & Voice Transactions</h3>
-                    <p>FinDet requests Internet permission only for two clear and limited purposes: (1) to check whether a newer version of the app is available on the Play Store, and (2) to enable the optional voice transaction feature which uses Google's Speech Recognition for transcription. All other FinDet features work 100% offline.</p>
+                    <h3>Internet Access — App Updates</h3>
+                    <p>FinDet uses internet access only for limited, transparent purposes such as checking whether a newer version of the app is available on the Play Store and opening external links that you explicitly choose to open. All core financial tracking, SMS/RCS parsing, receipt handling, and local storage remain on your device.</p>
 
                     <h4>App Update Checks</h4>
                     <ul>
@@ -169,39 +153,12 @@
                         <li>You control updates — the app will not download or install updates without your action through the Play Store.</li>
                     </ul>
 
-                    <h4>Voice Transactions (Speech-to-Text)</h4>
-                    <ul>
-                        <li>The voice feature requires Internet because your recorded audio (only when you explicitly tap the microphone) is sent to Google's servers for transcription.</li>
-                        <li>FinDet does not record or store raw audio; FinDet receives only the text transcription and processes/stores transaction data locally on your device.</li>
-                        <li>This feature is optional and disabled unless you choose to use it.</li>
-                    </ul>
-
-                    <p><strong>Assurance:</strong> Internet permission is limited to these two uses; under no circumstances does FinDet transmit your financial data, SMS/RCS content, or receipt images to external servers — all sensitive data remains on your device.</p>
+                    <p><strong>Assurance:</strong> Internet access is not used to upload your financial data, SMS/RCS content, or receipt images to external servers. Sensitive financial data remains on your device.</p>
 
                     <h3>2D. The Bottom Line</h3>
                     <p><strong>Without These Permissions:</strong> You can still use FinDet, but you'll need to manually enter every transaction.</p>
                     <p><strong>With These Permissions:</strong> FinDet becomes a powerful automated expense tracker that saves you time and provides deep insights into your spending.</p>
-                    <p><strong>Our Guarantee:</strong> <strong>We read SMS data ONLY from financial institutions - NOT personal SMS messages. ALL your financial data stays on your device. NOTHING ever leaves your device.</strong> We NEVER share, sell, or transmit your transactions, SMS messages, voice data (transaction text), or receipt images to any third party. Complete transparency, always.</p>
-                </section>
-
-                <section class="legal-section">
-                    <h2>2A. Third-Party Services (Complete Transparency)</h2>
-                    <p>FinDet is transparent about ALL third-party services. Here's exactly what we use and when:</p>
-                    
-                    <h3>Google Speech Recognition Service (Optional Voice Feature)</h3>
-                    <p>When you choose to use the voice transaction feature, FinDet uses Google's Speech Recognition:</p>
-                    <ul>
-                        <li><strong>Service Type:</strong> Android's built-in SpeechRecognizer API</li>
-                        <li><strong>What Happens:</strong> Your voice audio is sent to Google's servers for transcription</li>
-                        <li><strong>Internet Required:</strong> Yes, this feature requires an active internet connection</li>
-                        <li><strong>Data Sent to Google:</strong> Voice audio only (e.g., "groceries 500 rupees")</li>
-                        <li><strong>Data Received from Google:</strong> Text transcription only</li>
-                        <li><strong>FinDet's Access:</strong> FinDet never stores, records, or has access to your raw voice audio</li>
-                        <li><strong>What FinDet Does:</strong> Receives text from Google, parses it locally on your device, stores transaction data locally</li>
-                        <li><strong>Google's Privacy Policy:</strong> <a href="https://policies.google.com/privacy" target="_blank">https://policies.google.com/privacy</a></li>
-                        <li><strong>User Control:</strong> This feature is completely optional. You must explicitly consent before using it. You can use manual text entry instead.</li>
-                    </ul>
-                    <p><strong>Important Note:</strong> We do not control how Google processes your voice data. By using the voice feature, you acknowledge that your voice audio is processed by Google's servers subject to their privacy policy.</p>
+                    <p><strong>Our Guarantee:</strong> <strong>We read SMS data ONLY from financial institutions - NOT personal SMS messages. ALL your financial data stays on your device. NOTHING ever leaves your device.</strong> We NEVER share, sell, or transmit your transactions, SMS messages, or receipt images to any third party. Complete transparency, always.</p>
                 </section>
 
                 <section class="legal-section">
@@ -298,36 +255,10 @@
                         <summary><strong>Can FinDet see my transactions?</strong></summary>
                         <p>No. The developer cannot see your transactions, SMS messages, or any financial data. Everything stays encrypted on your device.</p>
                     </details>
-                    <h3>About Voice Transactions</h3>
-                    <details>
-                        <summary><strong>Is voice processing done on my device?</strong></summary>
-                        <p>No. Voice-to-text uses Google's Speech Recognition service, which sends audio to Google's servers. However, the transcribed text is then parsed locally on your device, and transaction data stays local.</p>
-                    </details>
-
-                    <details>
-                        <summary><strong>Can I use FinDet without voice features?</strong></summary>
-                        <p>Yes! Voice transactions are completely optional. You can always use manual text entry for transactions.</p>
-                    </details>
-
-                    <details>
-                        <summary><strong>Does FinDet record my conversations?</strong></summary>
-                        <p>No. Recording only happens when you explicitly tap the microphone button. There is no background listening or continuous monitoring.</p>
-                    </details>
-
-                    <details>
-                        <summary><strong>What does Google do with my voice data?</strong></summary>
-                        <p>Google processes voice audio to provide transcription. Please refer to Google's Privacy Policy for details on their data handling practices. FinDet does not control Google's processing.</p>
-                    </details>
-
-                    <details>
-                        <summary><strong>Can voice transactions work offline?</strong></summary>
-                        <p>No. Voice-to-text requires an internet connection to send audio to Google's servers. However, manual transaction entry works 100% offline.</p>
-                    </details>
-
                     <h3>About Data Sharing and Third Parties</h3>
                     <details>
                         <summary><strong>Does FinDet share my data with anyone?</strong></summary>
-                        <p>FinDet does NOT share, sell, or transmit your financial data to ANY third party. The only external service used is Google Speech Recognition (optional, for voice feature only), which receives voice audio but NOT your financial data.</p>
+                        <p>FinDet does NOT share, sell, or transmit your financial data to ANY third party.</p>
                     </details>
 
                     <details>
@@ -337,13 +268,13 @@
 
                     <details>
                         <summary><strong>Can I trust FinDet with my privacy?</strong></summary>
-                        <p>Yes. FinDet is designed with privacy-first principles: All financial data stays on your device, no account creation required, no automatic data collection, no data sharing with third parties, complete transparency about optional features (voice, SMS), and you control all permissions and data.</p>
+                        <p>Yes. FinDet is designed with privacy-first principles: All financial data stays on your device, no account creation required, no automatic data collection, no data sharing with third parties, complete transparency about optional permissions and features, and you control all permissions and data.</p>
                     </details>
 
                     <h3>About Permissions and Control</h3>
                     <details>
                         <summary><strong>Can I revoke permissions after granting them?</strong></summary>
-                        <p>Yes! SMS, microphone and camera permissions can be revoked anytime from Android Settings → Apps → FinDet → Permissions. Revoking permissions does not send any data to us.</p>
+                        <p>Yes! SMS, camera, notification, and biometric-related permissions can be managed anytime from Android Settings → Apps → FinDet → Permissions. Revoking permissions does not send any data to us.</p>
                     </details>
 
                     <details>
@@ -409,11 +340,10 @@
                         <li>✓ No account creation, login, or personal information required</li>
                     </ul>
 
-                    <h3>What We Disclose About Optional Features:</h3>
+                    <h3>What We Disclose About Optional Permissions:</h3>
                     <ul class="highlight-list">
-                        <li>✓ Voice transactions use android built-in Google's Speech Recognition</li>
-                        <li>✓ Voice feature requires internet connection and is subject to Google's Privacy Policy</li>
-                        <li>✓ SMS/RCS features are completely optional - you control when to use them</li>
+                        <li>✓ SMS/RCS features are completely optional and processed locally on your device</li>
+                        <li>✓ Camera access is used only when you choose to attach receipt images</li>
                         <li>✓ Notifications for reminders are optional and stored locally</li>
                         <li>✓ Optional biometric app access provides secure on-device authentication</li>
                     </ul>
@@ -425,7 +355,7 @@
                 </section>
 
                 <div class="legal-footer">
-                    <p><strong>Last updated: December 2025</strong></p>
+                    <p><strong>Last updated: May 2026</strong></p>
                 </div>
             </div>
         </div>
