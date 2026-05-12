@@ -44,7 +44,6 @@
                     <h3>2.1 Core Features</h3>
                     <ul>
                         <li><strong>Auto Expense Tracking:</strong> Automatically detects transactions from bank SMS/RCS messages</li>
-                        <li><strong>Voice Transaction Input:</strong> Hands-free transaction entry using voice commands</li>
                         <li><strong>Receipt Image Linking:</strong> Attach receipt photos to transactions for complete records</li>
                         <li><strong>Local Data Backup:</strong> Export and backup data to your preferred location</li>
                         <li><strong>Smart Budgeting:</strong> Set and track category-wise spending budgets</li>
@@ -115,23 +114,7 @@
                         <li>Without this permission, you must manually enter all transactions</li>
                     </ul>
 
-                    <h3>6.2 Microphone Permission (Essential for Voice Input)</h3>
-                    <p><strong>Why It's Essential:</strong> Enables hands-free transaction entry for convenience and accessibility.</p>
-                    <ul>
-                        <li>Used for voice transaction input feature</li>
-                        <li><strong>Important:</strong> Voice-to-text processing uses android built-in Google's Speech Recognition service</li>
-                        <li>Voice audio is sent to Google's servers for transcription</li>
-                        <li>Requires internet connection to function</li>
-                        <li>FinDet never stores or has access to raw voice audio</li>
-                        <li>Only text transcription is received and parsed locally</li>
-                        <li>Transaction data stays on your device</li>
-                        <li>Subject to Google's Privacy Policy: https://policies.google.com/privacy</li>
-                        <li>You must explicitly consent before using this feature</li>
-                        <li>You can revoke this permission anytime from device settings</li>
-                        <li>You can use manual text entry instead at any time</li>
-                    </ul>
-
-                    <h3>6.3 Camera Permission (Essential for Receipt Records)</h3>
+                    <h3>6.2 Camera Permission (Essential for Receipt Records)</h3>
                     <p><strong>Why It's Essential:</strong> Enables complete expense documentation with visual proof.</p>
                     <ul>
                         <li>Used to capture receipt images for transactions</li>
@@ -142,15 +125,15 @@
                         <li>You can revoke this permission anytime from device settings</li>
                     </ul>
 
-                    <h3>6.4 Other System Permissions</h3>
+                    <h3>6.3 Other System Permissions</h3>
                     <ul>
-                        <li><strong>Internet & Network State:</strong> Required ONLY for voice transaction feature (Google Speech Recognition) and app updates. Core functionality works 100% offline.</li>
+                        <li><strong>Internet & Network State:</strong> Required for app updates and related platform services. Core functionality works 100% offline.</li>
                         <li><strong>Wake Lock & Battery Optimization:</strong> Ensures SMS monitoring and widget updates work reliably in the background</li>
                         <li><strong>Boot Completed:</strong> Restarts SMS monitoring after device reboot for continuous tracking</li>
                     </ul>
 
-                    <h3>6.5 Permission Summary</h3>
-                    <p><strong>All permissions are technically optional</strong> - you can use the app without granting them. However, these permissions are <strong>essential to serve you better and utilize FinDet to its fullest potential</strong> for comprehensive financial analysis. Without these permissions, core features like automatic expense tracking and voice input will not be available.</p>
+                    <h3>6.4 Permission Summary</h3>
+                    <p><strong>All permissions are technically optional</strong> - you can use the app without granting them. However, these permissions are <strong>essential to serve you better and utilize FinDet to its fullest potential</strong> for comprehensive financial analysis. Without these permissions, core features like automatic expense tracking and receipt capture will not be available.</p>
                 </section>
 
                 <section class="legal-section">
@@ -199,8 +182,7 @@
                     <ul>
                         <li>While we strive for accuracy in our local processing algorithms, we cannot guarantee they will be error-free</li>
                         <li>Automatic SMS transaction detection may not be 100% accurate</li>
-                        <li>Voice transaction input may not always be accurately interpreted</li>
-                        <li>You should review all automatically detected or voice-input transactions</li>
+                        <li>You should review all automatically detected transactions</li>
                     </ul>
 
                     <h3>10.3 Local Operation</h3>
