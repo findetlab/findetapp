@@ -2,8 +2,10 @@ name: Auto Update Gold Price
 
 on:
   schedule:
-    # Runs 3 times a day: 10:30 AM, 1:30 PM, and 6:30 PM IST
-    - cron: '0 5,8,13 * * *'
+    # Runs at 10:37 AM, 1:37 PM, and 6:37 PM IST (uses :07 to avoid GitHub's :00 queue drops)
+    - cron: '7 5,8,13 * * *'
+    # Temporary test run for tonight at 8:07 PM IST (14:37 UTC) - remove after testing
+    - cron: '37 14 * * *'
   workflow_dispatch:
 
 permissions:
