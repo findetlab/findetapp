@@ -2,9 +2,8 @@ name: Auto Update Gold Price
 
 on:
   schedule:
-    # Runs every hour at :07 UTC (which is :37 past every hour in IST)
-    # Change '7 * * * *' to '37 * * * *' if you want :07 past every hour in IST
-    - cron: '7 * * * *'
+    # Runs every hour at :37 UTC (which is :07 past every hour in IST)
+    - cron: '37 * * * *'
   workflow_dispatch:
 
 permissions:
